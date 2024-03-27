@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+$bg_color_grey: #f6f6f6;
+$logo_color: #da8502;
+$banner_color: rgba(9, 7, 44, 0.85);
+$text_color_white: #fff;
+$text_color_gray: #585858;
+$text_color_gray: black;
+
+
+$font-family: 'Poppins', sans-serif;
+
+@mixin flax{
+    display: flex !important ;
+    justify-content: space-between;
+}
+header{
+    .m_box{
+        background-color: $bg_color_grey;
+        padding: 12px 0px;
+        .container{
+            .u_box{
+                @include flax;
+                .box{
+                    h6{
+                        margin-top: 0 !important;
+                        margin-bottom: 0px !important;
+                        font-size: 16px;
+                        font-weight: 400 !important;
+                        color: $text_color_gray;
+                    }
+                }
+                .box2{
+                    ul{
+                        margin-bottom: 0px !important;
+                        li{
+                            display: inline;
+                            a{
+                                text-decoration: none;
+                                color: $text_color_gray;
+                                padding-left: 15px;
+                                font-size: 16px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .d_box{
+        .container{
+            nav{
+                @include flax;
+                padding: 10px 0px;
+                .logo{
+                    h3{
+                        font-size: 34px;
+                        padding-top: 5px;
+                        font-weight: 700 !important;
+                        span{
+                            color: $logo_color;
+                            font-size: 34px;
+                            font-weight: 900 !important;
+                        }
+                    }
+                }
+                .menu{
+                    ul{
+                        padding-top: 17px;
+                        margin-bottom: 0px !important;
+                        li{
+                            display: inline;
+                            a{
+                                text-decoration: none;
+                                color: $text_color_gray;
+                                padding-left: 40px;
+                                font-weight: 700;
+                                font-size: 16px !important;
+                            }
+                            a:hover{
+                                color: $logo_color;
+                            }
+                        }
+                    }
+                }
+                .text{
+                    p{
+                        margin-bottom: -32px !important;
+                        letter-spacing: .9px;
+                        span{
+                            color: $logo_color;
+                            padding-left: 8px;
+                        }
+                    }
+                    a{
+                        font-size: 23px;
+                        text-decoration: none;
+                        color: $logo_color;
+                        font-weight: 800;
+                        // margin-top: 0px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+#banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/1.jpg);
+    background-size: 100% 100%;
+
+    .carousel-inner{
+        img{
+            height: 100vh !important;
+            width: 100%;
+        }
+        // .overlay{
+        //     width: 100% !important ;
+        //     height: 100vh !important;
+        //     background-color: rgba(9, 7, 44, 0.85);
+        // }    
+        .carousel-caption{
+            right: 5% !important;
+            left: 5% !important;
+            h5{
+                font-size: 90px;
+                font-family: $font-family;
+                font-weight: 100;
+                span{
+                    font-weight: 700;
+                }
+            }
+            .btn{
+                background-color: $logo_color !important;
+                color: $text_color_white;
+                font-weight: 600;
+                padding: 10px 15px;
+                margin-top: 40px;
+            }
+            .btn:hover{
+                background-color: rgba(9, 7, 44, 0.85) !important;
+            }
+        }
+        
+    }
+}
+
+
+
+#middle_1{
+    .btn{
+        background-color: $logo_color !important;
+        color: $text_color_white;
+        font-weight: 600;
+        padding: 10px 15px;
+        margin-top: 30px;
+    }
+}
+
+
+#middle_2{
+    width: 100%;
+    height: auto;
+    background-color: $bg_color_grey;
+    .card{
+        text-align: center;
+        background-color: $text_color_white;
+        box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.07);
+        border: none;
+        padding: 20px;
+        .card-body{
+            i{
+                color: $logo_color;
+                font-size: 35px;
+                padding-bottom: 20px;
+            }
+            h5{
+                font-family: $font-family;
+                padding-bottom: 10px;
+            }
+            h5:hover{
+                color: $logo_color;
+                cursor: pointer;
+            }
+            p{
+                font-size: 14px;
+            }
+            .btn{
+                color: $logo_color;
+                font-weight: bold;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+
+#middle_3{
+    background-image: url(../img/3.jpg);
+    background-size: 100% 100%;
+    .overlay{
+        width: 100%;
+        height: 100%;
+        padding-top: 100px;
+        padding-bottom: 80px;
+        background-color: rgba(9, 7, 44, 0.85);
+        h2{
+            color: $text_color_white;
+        }
+        p{
+            color: $text_color_white;
+            width: 700px;
+            margin: auto;
+            padding-top: 10px;
+            font-size: 14px;
+            padding-bottom: 60px;
+        }
+        .card{
+            background-color: transparent;
+            padding: 10px 10px;
+            border: 1px solid gray;
+            transition: all .5s;
+            margin-bottom: 25px;
+            .card-body{
+                color: rgb(195, 193, 193);
+                font-size: 14px;
+                h2{
+                    font-family: $font-family;
+                    margin-bottom: 0px !important;
+                    span{
+                        color: $logo_color;
+                    }
+                }
+                h6{
+                    font-family: $font-family;
+                    color: $bg_color_grey;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+        .card:hover{
+            background-color: black;
+            border: 1px solid black;
+        }
+        
+    }
+}
+
+
+
+#middle_4{
+    padding: 50px 0px;
+    background-color: $bg_color_grey;
+    .container{
+        p{
+            margin: auto;
+            padding-top: 10px;
+            font-size: 14px;
+        }
+        .col-lg-2{
+            i{
+                padding: 15px 10px;
+                font-size: 20px;
+                background-color: $logo_color;
+                color: $text_color_white;
+                border-radius: 5px;
+            }
+        }
+        
+        .m_box{
+            .box{
+                h5{
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin-bottom: 0px !important;
+                }
+                .btn{
+                    color: $logo_color;
+                    font-weight: bold;
+                    font-size: 14px;
+                    padding: 0 !important;
+                    border: none;
+                    transition: all .5s;
+                    margin-bottom: 40px;
+                }
+                .btn:hover{
+                    color: black;
+                }
+            }
+        }
+    }
+}
